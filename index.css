@@ -1,23 +1,27 @@
+body{
+    background-color: #C8B494;
+}
 
+@font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 header{
-    background-color: brown;
+    background-color: #160F0B;
 }
 ul li{
     width: 210px;
     height: 210px;
     display: inline-block;
-    background: yellow;
-    border-width: medium;
-    border-color: blueviolet;
-    border-style: ridge;
-    margin: 10px;
+    background: white;
+    margin: 0px 13px 13px 13px;
+    position: relative;
+}
+ul{
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
 }
 
 .Box{
     width: 1024px;
-    border: blueviolet solid medium;
-    background-color: aquamarine;
     margin-left:auto;
     margin-right: auto;
 }
@@ -25,6 +29,17 @@ ul li{
 article .Box{
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #160F0B;
+    border: rgb(145, 44, 24) solid 10px;
+    border-radius: 5px;
+    box-shadow: gray -2px 2px 4px;
+}
+
+article .Box p{
+    margin: 0.5em;
+    font-size: 1.5rem;
+    font-family: 'Sam3KRFont';
+    color: whitesmoke;
 }
 
 #topBox{
@@ -34,11 +49,41 @@ article .Box{
 #left{
     position: relative;
     display: inline-block;
-    left: -50px;
+    left: 20px;
     top: 10px;
+    color:white;
 }
 
 #right{
     position: relative;
     display: inline-block;
+}
+
+form{
+    margin:0 auto;
+    display: block;
+}
+
+.innerText{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#search{
+    width: 500px;
+    height: 50px;
+    border: rgb(145, 44, 24) 5px solid;
+    background-color: #160F0B;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+#searchBox{
+    position: relative;
+    left: 262px;
 }
