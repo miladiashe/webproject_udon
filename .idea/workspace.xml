@@ -60,7 +60,7 @@
       <updated>1589876196573</updated>
       <workItem from="1589876197807" duration="2736000" />
       <workItem from="1590082520201" duration="178000" />
-      <workItem from="1590171610285" duration="2464000" />
+      <workItem from="1590171610285" duration="5445000" />
     </task>
     <servers />
   </component>
@@ -72,5 +72,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="694" y="226" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1590082690713" />
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1590240699732">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590240699732" />
   </component>
 </project>

@@ -1,6 +1,4 @@
-body{
-    text-align: center;
-}
+
 
 header{
     background-color: brown;
@@ -13,4 +11,34 @@ ul li{
     border-width: medium;
     border-color: blueviolet;
     border-style: ridge;
+    margin: 10px;
+}
+
+.Box{
+    width: 1024px;
+    border: blueviolet solid medium;
+    background-color: aquamarine;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+article .Box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#topBox{
+    height:80px;
+}
+
+#left{
+    position: relative;
+    display: inline-block;
+    left: -50px;
+    top: 10px;
+}
+
+#right{
+    position: relative;
+    display: inline-block;
 }
