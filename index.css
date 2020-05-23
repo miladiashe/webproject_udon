@@ -5,3 +5,12 @@ body{
 header{
     background-color: brown;
 }
+ul li{
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    background: yellow;
+    border-width: medium;
+    border-color: blueviolet;
+    border-style: ridge;
+}
