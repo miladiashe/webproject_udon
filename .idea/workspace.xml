@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b36a7900-7024-46b7-a353-39e32354f305" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/submit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -14,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,7 +61,7 @@
       <updated>1589876196573</updated>
       <workItem from="1589876197807" duration="2736000" />
       <workItem from="1590082520201" duration="178000" />
-      <workItem from="1590171610285" duration="16964000" />
+      <workItem from="1590171610285" duration="18429000" />
     </task>
     <servers />
   </component>

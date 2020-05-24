@@ -58,6 +58,10 @@ article .Box p{
 #right{
     position: relative;
     display: inline-block;
+    color: whitesmoke;
+    left: 700px;
+    font-family: 'Sam3KRFont';
+    font-size: large;
 }
 
 form{
