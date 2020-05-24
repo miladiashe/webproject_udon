@@ -1,7 +1,8 @@
 body{
     background-color: #C8B494;
+    margin: 0;
 }
-
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 header{
@@ -64,6 +65,16 @@ form{
     display: block;
 }
 
+form button{
+    border:rgb(145, 44, 24) 5px solid;
+    border-radius: 50px;
+    height:50px;
+    width:50px;
+    font-family: 'DungGeunMo';
+    background-color: #160F0B;
+    color: whitesmoke;
+}
+
 .innerText{
     position: absolute;
     top: 80px;
@@ -71,6 +82,7 @@ form{
     color: white;
     font-size: 1.5rem;
     text-align: center;
+    font-family: 'Sam3KRFont';
 }
 
 #search{
@@ -81,9 +93,28 @@ form{
     color: whitesmoke;
     font-size: 1.5rem;
     margin: 10px;
+    font-family: 'DungGeunMo';
 }
 
 #searchBox{
     position: relative;
     left: 262px;
+}
+
+#TagSearch #check{
+    border:rgb(145, 44, 24) 5px solid;
+    height:20px;
+    width:20px;
+    background-image: none;
+    color: whitesmoke;
+}
+#TagSearch{
+    text-align: center;
+    font-family: 'DungGeunMo';
+    font-size: 1.5rem;
+}
+
+footer{
+    font-family: 'DungGeunMo';
+    text-align: right;
 }
