@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b36a7900-7024-46b7-a353-39e32354f305" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/submit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/review.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,6 +45,9 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\User\AppData\Roaming\npm\node_modules\prettier" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\webproject_udon" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\webproject_udon" />
     </key>
@@ -61,7 +64,7 @@
       <updated>1589876196573</updated>
       <workItem from="1589876197807" duration="2736000" />
       <workItem from="1590082520201" duration="178000" />
-      <workItem from="1590171610285" duration="18429000" />
+      <workItem from="1590171610285" duration="18692000" />
     </task>
     <servers />
   </component>
