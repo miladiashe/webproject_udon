@@ -9,7 +9,7 @@
 <header>
     <div class="Box" id="topBox">
         <div id="left"><a href="index.html"><img src="image\icon\topicon.png"></a></div>
-        <div id="right">리뷰 제출</div>
+        <a href="submit.html"><div id="right">리뷰 제출</div></a>
     </div>
 </header>
 <nav>
@@ -26,7 +26,26 @@
     </div>
 </nav>
 <article>
-
+    <div class="Box">
+        <p class="article">리뷰를 보내주세요!</p>
+        <form id="reviewForm">
+            가게 이름: <input type="text"> <br> <br>
+            주소: <input type="text"> <br><br>
+            <fieldset name="deliciousPart">
+                <legend>어떤 부분이 맛있었나요?</legend>
+                <input type="checkbox" name="soup"> 국물
+                <input type="checkbox" name="noodle"> 면발
+                <input type="checkbox" name="topping"> 토핑
+            </fieldset>
+                <br>
+            <fieldset name="money">
+                <legend>가격대는 어느정도인가요?</legend>
+                <input type="radio" name="easy"> 싸요
+                <input type="radio" name="medium"> 괜찮아요
+                <input type="radio" name="hard"> 부담스러워요
+            </fieldset>
+        </form>
+    </div>
 </article>
 <footer>
     <div class="Box">

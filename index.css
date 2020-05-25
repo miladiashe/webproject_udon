@@ -13,7 +13,7 @@ ul li{
     height: 210px;
     display: inline-block;
     background: white;
-    margin: 0px 13px 13px 13px;
+    margin: 0 13px 13px 13px;
     position: relative;
 }
 ul{
@@ -34,12 +34,13 @@ article .Box{
     border: rgb(145, 44, 24) solid 10px;
     border-radius: 5px;
     box-shadow: gray -2px 2px 4px;
+    color: whitesmoke;
 }
 
-article .Box p{
+article .Box .article{
     margin: 0.5em;
     font-size: 1.5rem;
-    font-family: 'Sam3KRFont';
+    font-family: 'Sam3KRFont', serif;
     color: whitesmoke;
 }
 
@@ -60,7 +61,7 @@ article .Box p{
     display: inline-block;
     color: whitesmoke;
     left: 700px;
-    font-family: 'Sam3KRFont';
+    font-family: 'Sam3KRFont', serif;
     font-size: large;
 }
 
@@ -74,7 +75,7 @@ form button{
     border-radius: 50px;
     height:50px;
     width:50px;
-    font-family: 'DungGeunMo';
+    font-family: 'DungGeunMo', serif;
     background-color: #160F0B;
     color: whitesmoke;
 }
@@ -86,7 +87,7 @@ form button{
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Sam3KRFont';
+    font-family: 'Sam3KRFont' , serif;
 }
 
 #search{
@@ -97,7 +98,7 @@ form button{
     color: whitesmoke;
     font-size: 1.5rem;
     margin: 10px;
-    font-family: 'DungGeunMo';
+    font-family: 'DungGeunMo' , serif;
 }
 
 #searchBox{
@@ -114,11 +115,16 @@ form button{
 }
 #TagSearch{
     text-align: center;
-    font-family: 'DungGeunMo';
+    font-family: 'DungGeunMo', serif;
     font-size: 1.5rem;
 }
 
 footer{
-    font-family: 'DungGeunMo';
+    font-family: 'DungGeunMo', serif;
     text-align: right;
+}
+
+#reviewForm{
+    font-family: 'DungGeunMo', serif;
+    width: 1000px;
 }
