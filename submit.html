@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<script type="text/javascript">
+    function myCheckEvent() {
+        var checkboxState = document.getElementById("check")
+        var target = document.getElementById("TagSearchHidden")
+        if(checkboxState.checked === true){
+            target.style.display = "block";
+        }
+        else{
+            target.style.display = "none";
+        }
+    }
+</script>
 <header>
     <div class="Box" id="topBox">
         <div id="left"><a href="index.html"><img src="image\icon\topicon.png"></a></div>
@@ -20,7 +32,32 @@
                 <button type="submit">검색</button>
             </div>
             <div id="TagSearch">
-                <input type="checkbox" id="check">해시태그 검색
+                <input type="checkbox" id="check" onclick="myCheckEvent()">태그 검색
+
+            </div>
+            <div id="TagSearchHidden">
+                맛있는 부분<br>
+                <input type="checkbox" name="soup"> 국물
+                <input type="checkbox" name="noodle"> 면발
+                <input type="checkbox" name="topping"> 토핑
+                <input type="checkbox" name="side"> 사이드메뉴<br>
+                가격<br>
+                <input type="radio" name="price" value="low"> 싸요
+                <input type="radio" name="price" value="medium"> 괜찮아요
+                <input type="radio" name="price" value="high"> 부담스러워요<br>
+                계열<br>
+                <input type="checkbox" name="japan"> 일본식
+                <input type="checkbox" name="fusion"> 퓨전
+                <input type="checkbox" name="highway"> 휴게소
+                <input type="checkbox" name="easy"> 분식집<br>
+                종류<br>
+                <input type="checkbox" name=premium"> 프리미엄(토핑에 힘을 주어서 특별하거나 푸짐하다는 인상을 받는 우동.)<br>
+                <input type="checkbox" name="basic"> 기본(면발과 국물에 충실한 '기본 우동'.)<br>
+                분위기<br>
+                <input type="checkbox" name="solo"> 혼자 먹기 좋아요
+                <input type="checkbox" name="friend"> 친구와 가기 좋아요
+                <input type="checkbox" name="lover"> 데이트 장소로 좋아요
+                <input type="checkbox" name="family"> 가족끼리 가기 좋아요
             </div>
         </form>
     </div>
@@ -36,14 +73,44 @@
                 <input type="checkbox" name="soup"> 국물
                 <input type="checkbox" name="noodle"> 면발
                 <input type="checkbox" name="topping"> 토핑
+                <input type="checkbox" name="side"> 사이드메뉴<br>
+                국물 별점: 1점 <input type="range" min="1" max="5" value="3 "> 5점<br>
+                면발 별점: 1점 <input type="range" min="1" max="5" value="3 "> 5점<br>
+                토핑 별점: 1점 <input type="range" min="1" max="5" value="3 "> 5점<br>
+                사이드메뉴 별점: 1점 <input type="range" min="1" max="5" value="3 "> 5점<br>
             </fieldset>
                 <br>
             <fieldset name="money">
                 <legend>가격대는 어느정도인가요?</legend>
-                <input type="radio" name="easy"> 싸요
-                <input type="radio" name="medium"> 괜찮아요
-                <input type="radio" name="hard"> 부담스러워요
+                <input type="radio" name="price" value="low"> 싸요
+                <input type="radio" name="price" value="medium"> 괜찮아요
+                <input type="radio" name="price" value="high"> 부담스러워요
             </fieldset>
+            <br>
+            <fieldset name="style">
+                <legend>이 우동을 가장 잘 설명할 수 있는 단어를 골라주세요.</legend>
+                어떤 계열의 우동인가요?<br>
+                <input type="checkbox" name="japan"> 일본식
+                <input type="checkbox" name="fusion"> 퓨전
+                <input type="checkbox" name="highway"> 휴게소
+                <input type="checkbox" name="easy"> 분식집<br><br>
+                어떤 종류의 우동이 있었나요?<br>
+                <input type="checkbox" name=premium"> 프리미엄(토핑에 힘을 주어서 특별하거나 푸짐하다는 인상을 받는 우동.)<br>
+                <input type="checkbox" name="basic"> 기본(면발과 국물에 충실한 '기본 우동'.)
+            </fieldset>
+            <br>
+            <fieldset name="deliciousPart">
+                <legend>이 집의 분위기를 잘 설명할 수 있는 말을 골라주세요.</legend>
+                <input type="checkbox" name="solo"> 혼자 먹기 좋아요
+                <input type="checkbox" name="friend"> 친구와 가기 좋아요
+                <input type="checkbox" name="lover"> 데이트 장소로 좋아요
+                <input type="checkbox" name="family"> 가족끼리 가기 좋아요
+            </fieldset>
+            <br>후기<br>
+            <textarea name="review" rows="10" cols="40">후기를 적어주세요!</textarea>
+            <br>
+            <input type="submit" value="제출" id="submitButton">
+            <br>
         </form>
     </div>
 </article>

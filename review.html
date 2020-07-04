@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<script type="text/javascript">
+    function myCheckEvent() {
+        var checkboxState = document.getElementById("check");
+        var target = document.getElementById("TagSearchHidden");
+        if(checkboxState.checked === true){
+            target.style.display = "block";
+        }
+        else{
+            target.style.display = "none";
+        }
+    }
+
+</script>
 <header>
     <div class="Box" id="topBox">
         <div id="left"><a href="index.html"><img src="image\icon\topicon.png"></a></div>
@@ -20,23 +33,110 @@
                 <button type="submit">검색</button>
             </div>
             <div id="TagSearch">
-                <input type="checkbox" id="check">해시태그 검색
+                <input type="checkbox" id="check" onclick="myCheckEvent()">태그 검색
+
+            </div>
+            <div id="TagSearchHidden">
+                맛있는 부분<br>
+                <input type="checkbox" name="soup"> 국물
+                <input type="checkbox" name="noodle"> 면발
+                <input type="checkbox" name="topping"> 토핑
+                <input type="checkbox" name="side"> 사이드메뉴<br>
+                가격<br>
+                <input type="radio" name="price" value="low"> 싸요
+                <input type="radio" name="price" value="medium"> 괜찮아요
+                <input type="radio" name="price" value="high"> 부담스러워요<br>
+                계열<br>
+                <input type="checkbox" name="japan"> 일본식
+                <input type="checkbox" name="fusion"> 퓨전
+                <input type="checkbox" name="highway"> 휴게소
+                <input type="checkbox" name="easy"> 분식집<br>
+                종류<br>
+                <input type="checkbox" name=premium"> 프리미엄(토핑에 힘을 주어서 특별하거나 푸짐하다는 인상을 받는 우동.)<br>
+                <input type="checkbox" name="basic"> 기본(면발과 국물에 충실한 '기본 우동'.)<br>
+                분위기<br>
+                <input type="checkbox" name="solo"> 혼자 먹기 좋아요
+                <input type="checkbox" name="friend"> 친구와 가기 좋아요
+                <input type="checkbox" name="lover"> 데이트 장소로 좋아요
+                <input type="checkbox" name="family"> 가족끼리 가기 좋아요
             </div>
         </form>
     </div>
 </nav>
 <article>
     <div class="Box">
-        <div>사진이 들어갈 곳</div>
-        <div>
-            <p id="storeName">마루가메제면 경희대점</p>
-            <p id="address">주소를 적는 곳</p>
+        <div id="imgBox">
+            <img src="image\food\marugameKH\maru_01.jpg" onclick="leftImg()" id="udo1" alt="우동">
+            <img src="image\food\marugameKH\maru_02.jpg" onclick="rightImg()" id="udo2" alt="우동">
+        </div>
+        <div id="textBox">
+            <div id="storeName">마루가메제면 경희대점</div>
+            <p id="address">
+                주소: 02454 서울시 동대문구 경희대로3길 6<br>
+                전화번호: 070-7746-4755<br>
+                영업 시간: 11:00~21:00/폐점시간 30분전 라스트오더
+            </p>
+            <p class="head">메뉴</p>
+            <div class="articleText">
+                <ul>
+                    <li>니꾸타마붓가케우동(肉玉ぶっかけうどん）</li>
+                    <li>기츠네우동(きつねうどん）</li>
+                    <li>옛날우동(巾着温玉うどん)</li>
+                    <li>니꾸우동(肉うどん）</li>
+                    <li>자루우동(ざるうどん）</li>
+                    <li>가케우동(かけうどん）</li>
+                    <li>가마아게 우동(釜揚げうどん）</li>
+                    <li>규동</li>
+                </ul>
+            </div>
             <hr>
-            <p id="tags">태그 목록</p>
-            <p id="review">리뷰 내용</p>
+            <p class="head">평균 별점</p>
+            <div>
+                면: 5점<br>
+                국물: 4점<br>
+                토핑: 4점
+            </div>
+            <p class="head">태그 목록</p>
+            <div>#면발 #토핑 #일본식 #기본 #프리미엄 #혼자먹기좋아요</div>
+            <p class="head">리뷰</p>
+            <div class="miniBox">면: 5점<br>
+                국물: 4점<br>
+                토핑: 4점<br><br>
+                집 근처에 생겨서 너무 행복한 맛집. 일본에서 온 프랜차이즈로, 면발을 직접 뽑아 차원이 다른 면의 탱글함을 보여줍니다.<br>
+                면발을 강조하는 대신 국물은 평범하다고 할 수 있지만, 여기서 나오는 비밀무기가 바로 튀김가루입니다.<br>
+                파나 단무지 등을 주는 공간에 튀김가루가 놓여 있어, 우동을 시키면 마음껏 퍼서 얹을 수 있어 국물에 손쉽게 튀김 맛을 더해줍니다.<br>
+                우동에 튀김이 들어가면 국물 맛도 달라진다는 사실은 튀김우동을 좋아하는 사람이라면 다들 아는 법이죠.<br>
+                물론 공짜 튀김가루에 지지 않겠다는 듯이 튀김도 다양하게 준비되어 있습니다.<br>
+                없는 튀김은 문의하면 갓 튀긴 따끈한 튀김을 먹을 수 있어요.<br>
+                기본 가케우동도 정말 맛있지만, 저는 요즘 니꾸타마붓가케 우동에 빠져 있습니다. 짭짤한 국물에 고기와 온천계란을 얹어서 비벼 먹는
+                우동입니다. 맛의 조화가 정말 완벽해요. 규동을 면으로 먹는 느낌도 나는 게, 같은 고기와 계란이 올라가는 규동도
+                메뉴로 준비되어 있습니다. 이 조합이 궁금한데 돈이 부족하다면 온천계란만 올려도 국물과 계란의 조화가 맛있어요!<br>
+            </div>
         </div>
     </div>
 </article>
+<script type="text/javascript">
+    var img1 = document.getElementById("udo1");
+    var img2 = document.getElementById("udo2");
+
+    var imgTrigger = true
+    img1.style.width = "500px";
+    img2.style.width = "250px";
+    function rightImg() {
+        if (imgTrigger === true){
+            img1.style.width = "250px";
+            img2.style.width = "500px";
+        }
+        imgTrigger = false;
+    }
+    function leftImg() {
+        if (imgTrigger === false){
+            img2.style.width = "250px";
+            img1.style.width = "500px";
+        }
+        imgTrigger = true;
+    }
+</script>
 <footer>
     <div class="Box">
         <div>우동여지도</div>

@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<script type="text/javascript">
+    function myCheckEvent() {
+        var checkboxState = document.getElementById("check")
+        var target = document.getElementById("TagSearchHidden")
+        if(checkboxState.checked === true){
+            target.style.display = "block";
+        }
+        else{
+            target.style.display = "none";
+        }
+    }
+</script>
 <header>
     <div class="Box" id="topBox">
         <div id="left"><a href="index.html"><img src="image\icon\topicon.png"></a></div>
@@ -20,13 +32,40 @@
                 <button type="submit">검색</button>
             </div>
             <div id="TagSearch">
-                <input type="checkbox" id="check">해시태그 검색
+                <input type="checkbox" id="check" onclick="myCheckEvent()">태그 검색
+
+            </div>
+            <div id="TagSearchHidden">
+                <form id="SearchForm">
+                    맛있는 부분<br>
+                    <input type="checkbox" name="soup"> 국물
+                    <input type="checkbox" name="noodle"> 면발
+                    <input type="checkbox" name="topping"> 토핑
+                    <input type="checkbox" name="side"> 사이드메뉴<br>
+                    가격<br>
+                    <input type="radio" name="price" value="low"> 싸요
+                    <input type="radio" name="price" value="medium"> 괜찮아요
+                    <input type="radio" name="price" value="high"> 부담스러워요<br>
+                    계열<br>
+                    <input type="checkbox" name="japan"> 일본식
+                    <input type="checkbox" name="fusion"> 퓨전
+                    <input type="checkbox" name="highway"> 휴게소
+                    <input type="checkbox" name="easy"> 분식집<br>
+                    종류<br>
+                    <input type="checkbox" name=premium"> 프리미엄(토핑에 힘을 주어서 특별하거나 푸짐하다는 인상을 받는 우동.)<br>
+                    <input type="checkbox" name="basic"> 기본(면발과 국물에 충실한 '기본 우동'.)<br>
+                    분위기<br>
+                    <input type="checkbox" name="solo"> 혼자 먹기 좋아요
+                    <input type="checkbox" name="friend"> 친구와 가기 좋아요
+                    <input type="checkbox" name="lover"> 데이트 장소로 좋아요
+                    <input type="checkbox" name="family"> 가족끼리 가기 좋아요
+                </form>
             </div>
         </form>
     </div>
 </nav>
 <article>
-
+    검색기능은 아직 구현하지 못했습니다.
 </article>
 <footer>
     <div class="Box">
